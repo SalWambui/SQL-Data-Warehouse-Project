@@ -51,14 +51,11 @@ These insights empower stakeholders with key business metrics, enabling strategi
 ```text
 data-warehouse-project/
 │
-├── datasets/                       # Raw datasets used for the project (ERP and CRM data)
+├── datasets/                       # Data is loaded into the target tables using a Full Load methodology
 │
 ├── docs/                           # Project documentation and architecture details
-│   ├── etl.drawio                  # ETL techniques and methods
 │   ├── data_architecture.drawio    # Overall project architecture
 │   ├── data_catalog.md             # Dataset catalog with field descriptions and metadata
-│   ├── data_flow.drawio            # Data flow diagram
-│   ├── data_models.drawio          # Data models (star schema)
 │   └── naming-conventions.md       # Naming guidelines for tables, columns, and files
 │
 ├── scripts/                        # SQL scripts for ETL and transformations
@@ -69,9 +66,7 @@ data-warehouse-project/
 ├── tests/                          # Data quality checks and test scripts
 │
 ├── README.md                       # Project overview and setup instructions
-├── LICENSE                         # License information
-├── .gitignore                      # Git ignore rules
-└── requirements.txt                # Project dependencies
+└── LICENSE                         # License information
 
 # About Me
 My name is Salome Wambui a student pursuing Mathematics and Computer Science. I am an aspiring Big Data Scientist. I am enthusastic to learn and apply my skills to solve real world challenges!
