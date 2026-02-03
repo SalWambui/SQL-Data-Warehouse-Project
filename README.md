@@ -6,4 +6,5 @@ Building a modern data warehouse with SQL Server, including ETL processes, data 
 For this project I implemented thr Medallion Architecture ie: #Bronze, #Silver, #Gold
 layers:
 
-https://1drv.ms/u/c/db6e6257a3cacd79/IQA_zwC-AonPQ5e2ZuimKclWAXbA0av0k_V0P6wC-hzvLfQ?e=ZlP47h
+
+<img width="1002" height="651" alt="DATA ARCHITECTURE" src="https://github.com/user-attachments/assets/802632ed-4d93-44f8-98fc-9425edfa5c37" />
