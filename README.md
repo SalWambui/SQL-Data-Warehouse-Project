@@ -68,6 +68,8 @@ data-warehouse-project/
 ├── README.md                       # Project overview and setup instructions
 └── LICENSE                         # License information
 
+```
+
 
 ## Conclusion
 
