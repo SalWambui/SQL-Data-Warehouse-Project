@@ -16,12 +16,13 @@
 
 ## Gold Rules
 - All names must use meaningful, business-aligned names for tables, starting with the category prefix.
-- `<category>_<entity>`
-       - `<category>`: Describes the role of the table, such as dim (dimension) or fact (fact table).
-       - `<entity>`: Descriptive name of the table, aligned with the business domain (e.g., customers, products, sales).
-       - `Examples:`
-              - dim_customers → Dimension table for customer data.
-              - fact_sales → Fact table containing sales transactions.
+- Naming format: `<category>_<entity>`
+  - `<category>`: Describes the role of the table, such as `dim` (dimension) or `fact` (fact table).
+  - `<entity>`: Descriptive name of the table, aligned with the business domain (e.g., customers, products, sales).
+  - **Examples:**
+    - `dim_customers` → Dimension table for customer data
+    - `fact_sales` → Fact table containing sales transactions
+
 ## Glossary of Category Patterns
 
 | Pattern  | Meaning          | Example(s) |
@@ -32,21 +33,27 @@
 
 ## Column Naming Conventions
 ## Surrogate Keys
-- All primary keys in dimension tables must use the suffix _key.
-- ### `<table_name>_key`
-        - `<table_name>`: Refers to the name of the table or entity the key belongs to.
-        - `key`: A suffix indicating that this column is a surrogate key.
-        - `Example: customer_key → Surrogate key in the dim_customers table.`
+## Primary Key Naming Convention
+
+- All primary keys in dimension tables must use the suffix `_key`.
+- Naming format: `<table_name>_key`
+  - `<table_name>`: Refers to the name of the table or entity the key belongs to
+  - `key`: A suffix indicating that this column is a surrogate key
+  - **Example:** `customer_key` → Surrogate key in the `dim_customers` table
+
 ## Technical Columns
-- All technical columns must start with the prefix dwh_, followed by a descriptive name indicating the column's purpose.
-- ### `dwh_<column_name>`
-        - `dwh`: Prefix exclusively for system-generated metadata.
-        - `<column_name>`: Descriptive name indicating the column's purpose.
-        - `Example: dwh_load_date → System-generated column used to store the date when the record was loaded.`
-## Stored Procedure
+
+- All technical columns must start with the prefix `dwh_`, followed by a descriptive name indicating the column's purpose.
+- Naming format: `dwh_<column_name>`
+  - `dwh`: Prefix exclusively for system-generated metadata
+  - `<column_name>`: Descriptive name indicating the column's purpose
+  - **Example:** `dwh_load_date` → System-generated column used to store the date when the record was loaded
+
+## Stored Procedure Naming Convention
+
 - All stored procedures used for loading data must follow the naming pattern:
-- ### `load_<layer>.`
-         - `<layer>`: Represents the layer being loaded, such as bronze, silver, or gold.
-         - `Example:`
-              - load_bronze → Stored procedure for loading data into the Bronze layer.
-              - load_silver → Stored procedure for loading data into the Silver layer.
+- Naming format: `load_<layer>`
+  - `<layer>`: Represents the layer being loaded, such as `bronze`, `silver`, or `gold`
+  - **Examples:**
+    - `load_bronze` → Stored procedure for loading data into the Bronze layer
+    - `load_silver` → Stored procedure for loading data into the Silver layer
