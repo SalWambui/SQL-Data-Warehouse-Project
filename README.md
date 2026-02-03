@@ -30,11 +30,11 @@ This project involves:
 Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
 
 # Specifications
-- Data Sources: Import data from two source systems (ERP and CRM) provided as CSV files.
-- Data Quality: Cleanse and resolve data quality issues prior to analysis.
-- Integration: Combine both sources into a single, user-friendly data model designed for analytical queries.
-- Scope: Focus on the latest dataset only; historization of data is not required.
-- Documentation: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
+- **Data Sources**: Import data from two source systems (ERP and CRM) provided as CSV files.
+- **Data Quality**: Cleanse and resolve data quality issues prior to analysis.
+- **Integration**: Combine both sources into a single, user-friendly data model designed for analytical queries.
+- **Scope**: Focus on the latest dataset only; historization of data is not required.
+- **Documentation**: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
 
 
 # BI: Analytics & Reporting (Data Analysis)
@@ -67,6 +67,13 @@ data-warehouse-project/
 │
 ├── README.md                       # Project overview and setup instructions
 └── LICENSE                         # License information
+
+
+## Conclusion
+
+This data warehouse project demonstrates the end-to-end ETL process, from extracting raw data from source systems (ERP, CRM), transforming it in the Silver layer, and loading it into analytical models in the Gold layer. 
+
+It follows industry-standard practices, including star schema modeling, surrogate keys, technical columns, and consistent naming conventions.
 
 # About Me
 My name is Salome Wambui a student pursuing Mathematics and Computer Science. I am an aspiring Big Data Scientist. I am enthusastic to learn and apply my skills to solve real world challenges!
